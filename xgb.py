@@ -217,8 +217,12 @@ for ax, metric, title in zip(axes,
                 f"{val:,.2f}", va="center", fontsize=8)
 
 plt.tight_layout()
+output_dir = os.path.join(os.path.dirname(__file__), "op_image")
+os.makedirs(output_dir, exist_ok=True)
+output_path = os.path.join(output_dir, "01_metrics_xgb.png")
+plt.savefig(output_path, dpi=150, bbox_inches="tight")
 plt.show()
-print(f"\n  [SAVED]  01_metrics_per_segment.png")
+print(f"\n  [SAVED]  {output_path}")
 
 # ---------------------------------------------------------------------------
 # 7.  Save metrics CSV

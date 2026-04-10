@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 # 1.  Configuration
 # ---------------------------------------------------------------------------
 DATA_PATH  = os.path.join(os.path.dirname(__file__), "dynamic_pricing_dataset_v2.csv")
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "dt_outputs")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "op_image")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 PRICE_CAP_MULTIPLIER = 1.25
