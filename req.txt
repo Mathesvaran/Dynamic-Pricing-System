@@ -1,11 +1,18 @@
 # =====================================================================
-#  Requirements — Dynamic Pricing XGBoost Model
+#  Requirements — Dynamic Pricing ML Models (XGBoost, Decision Tree, K-Means)
 #  Install with:  pip install -r req.txt
 # =====================================================================
 
+# Core Data Manipulation
 numpy>=1.24.0
 pandas>=2.0.0
-scikit-learn>=1.3.0
-xgboost>=2.0.0
+
+# Visualizations (Plots, Clusters, Metrics)
 matplotlib>=3.7.0
 seaborn>=0.12.0
+
+# Machine Learning: K-Means Clustering & Decision Tree
+scikit-learn>=1.3.0
+
+# Machine Learning: XGBoost
+xgboost>=2.0.0
