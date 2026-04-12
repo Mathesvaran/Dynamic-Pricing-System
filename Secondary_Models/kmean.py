@@ -119,5 +119,5 @@ def apply_kmeans_clustering(data_path: str, n_clusters: int = 3):
     plt.show()
 
 if __name__ == "__main__":
-    dataset_file = "dynamic_pricing_dataset_v2.csv"
+    dataset_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dynamic_pricing_dataset.csv")
     apply_kmeans_clustering(dataset_file, n_clusters=3)

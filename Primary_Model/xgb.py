@@ -32,7 +32,7 @@ warnings.filterwarnings("ignore")
 # ---------------------------------------------------------------------------
 # 1.  Configuration
 # ---------------------------------------------------------------------------
-DATA_PATH  = os.path.join(os.path.dirname(__file__), "dynamic_pricing_dataset_v2.csv")
+DATA_PATH  = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dynamic_pricing_dataset.csv")
 
 PRICE_CAP_MULTIPLIER = 1.25   # maximum allowed price = base_price × 1.50
 TEST_SIZE            = 0.20

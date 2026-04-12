@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 # ---------------------------------------------------------------------------
 # 1.  Configuration
 # ---------------------------------------------------------------------------
-DATA_PATH  = os.path.join(os.path.dirname(__file__), "dynamic_pricing_dataset_v2.csv")
+DATA_PATH  = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dynamic_pricing_dataset.csv")
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "op_image")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
